@@ -1,0 +1,27 @@
+CREATE DATABASE APIBIT
+USE APIBIT
+GO
+
+IF OBJECT_ID('Cliente') IS NOT NULL  
+   DROP TABLE Cliente;
+
+GO
+CREATE TABLE Cliente(
+IdCliente INT PRIMARY KEY IDENTITY,
+NombreCliente VARCHAR(255),
+Correo VARCHAR(255),
+Estado BIT
+)
+GO
+IF OBJECT_ID('Servicio') IS NOT NULL  
+   DROP TABLE Servicio;
+
+GO
+CREATE TABLE Servicio(
+IdServicio INT PRIMARY KEY IDENTITY,
+NombreServicio VARCHAR(255),
+Descripcion VARCHAR(255),
+Estado BIT
+)
+GO
+

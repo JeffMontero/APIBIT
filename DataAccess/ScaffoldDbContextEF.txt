@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=DESKTOP-VJ244OG;Database=APIBIT;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data -context ApplicationDbContext -Tables Cliente, Servicio -Force
